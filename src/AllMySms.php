@@ -127,6 +127,8 @@ class AllMySms
             $sms['DATA']['DATE'] = $date;
         }
 
+        $sms['DATA']['CODING'] = 2;
+
         return [
             'login' => $this->config['login'],
             'apiKey' => $this->config['api_key'],
